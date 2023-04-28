@@ -1,0 +1,44 @@
+About: A short introduction on who you are and what you bring to the table.
+
+- Sophomore studying applied math and computer science
+- Traveled from a small town Sharon Massachusetts to Berkeley
+- Enjoys spending time in nature, journaling, sailing 
+
+Work: Some examples of work that you have done that you want to showcase. This could include past projects that you have worked on, current projects that you are currently doing, class projects, internships, and clubs!
+
+(interested in the intersection between business and technology)
+
+- Cal Sailing Team 
+- CS 61B Course Staff
+- Ascend 
+- Sharebite
+- Optimir Consulting
+- Berkshire Grey
+
+// use <a> to link to each website 
+
+Contact: A section where potential site-visitors could find your social media handles, and an email or phone number to contact you.
+
+Instagram: @fionaawuu
+LinkedIn: 
+Email: wu.fiona@berkeley.edu 
+
+HTML
+- One use of each type of header <h1>-<h6>
+- One use of <div> with flex layout. Hint: flex is useful for adding arbitrarily many containers into a space.
+- One use of <div> with grid layout. Hint: grid is useful for aligning and laying out several similar containers.
+- One use of <a>. This must be set to open in a new tab.
+- One use of <img>
+- One use of <button>. The button can do anything.
+- One use of <title> and <author>. Hint: this should go in the <head>
+- One functional component. This should be something quirky that shows off your knowledge. It should be a form input that triggers some JavaScript function. It does not have to do something that is necessarily useful, it only has to do something. This will be graded on the following component:
+- Use of JavaScript from a <script> tag
+- Use of a <form> component, with a <label> and <input> (can be of any input type).
+- Use of a <submit> button.
+
+CSS
+- * selector
+- .[class] selector
+- #[id] selector
+- :hover pseudoselector
+- font property

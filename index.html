@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coda+Caption&family=Fjalla+One&family=Nerko+One&family=Permanent+Marker&family=Quicksand:wght@300&family=Roboto+Mono:wght@300&family=Roboto:wght@300&family=Sarpanch:wght@700&family=Space+Mono:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">        
+  <meta name="author" content="Fiona Wu">
+  <meta name="description" content="Fiona Wu's Page">
+  <title>Get To Know Fiona Wu</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="jscript" href="jscript.js">
+  <script src="jquery-3.6.1.min.js"></script>
+</head>
+
+
+<body style="margin: 0; position: relative">
+  <img class="bg-img" src="SailingBackground.jpeg" alt="">
+    <div class="intro-wrapper">
+      <div class="profile-pic">
+        <img src="WuFiona.jpg" class="intro-img">
+      </div>
+      <div class="resized-elems">
+        <div class="typing-container">
+          <span class="time-landing" id="lblGreetings"></span>
+          <span class="input-cursor">|</span>
+        </div>
+        <h1 class="name">Get To Know Fiona Wu</h1>
+        <h3 class="intro-bio">
+          <em>I'm a student at University of California, Berkeley interested in the intersection between business and technology. Let's learn more about me!</em>
+        </h3>
+      </div>
+
+      <script>
+          var myDate = new Date();
+          var hrs = myDate.getHours();
+          var greet;
+
+          if (hrs < 12)
+              greet = 'Good Morning!';
+          else if (hrs >= 12 && hrs <= 16)
+              greet = 'Good Afternoon!';
+          else if (hrs >= 17 && hrs <= 24)
+              greet = 'Good Evening!';
+
+          var textPosition = 0;
+          var speed = 200;
+
+          typewriter = () => {
+              var input = document.getElementById("lblGreetings");
+              input.innerText = greet.substring(0, textPosition);
+
+              if (textPosition++ != greet.length) {
+                  setTimeout(typewriter, speed);
+              }
+          }
+          window.addEventListener("load", typewriter);
+      </script>
+      
+      <div class="para-bkg">
+        <p class="intro-para" id="top">Who is Fiona Wu?</p>
+        <p class="intro-para">&#128218 A sophomore studying Applied Mathematics and Computer Science at UC Berkeley</p>
+        <p class="intro-para">&#x1F33F Enjoys spending time in nature whether it's hiking, running, sailing, etc</p>
+        <p class="intro-para"> &#127775 Traveled from a small town Sharon Massachusetts to Berkeley</p>
+        <p class="intro-para">&#128221 Teaching data structures & algorithms principles for UC Berkeley's CS 61B Course Staff</p>
+        <p class="intro-para" id="bottom">&#128214 Journaling and reflecting on my personal growth</p>
+      </div>
+    </div>
+    
+    <div id="works-wrapper">
+      <div style="display: block">
+        <div class="works-intro">
+        <span id="works"></span>
+        <span id="input-cursor">|</span>
+        </div>
+        <div class="work-descr">
+          <h1>Cal Sailing Team</h1>
+          <p>Web Developer & Social Media Managers</p>
+          <h1>CS 61B Course Staff</h1>
+          <p>Academic Intern</p>
+          <h1>Ascend</h1> 
+          <p>Finance Chair</p>       
+          <h1>Sharebite</h1> 
+          <p>Restaurant Operations Intern</p>    
+          <h1>Berkshire Grey</h1> 
+          <p>Data & Machine Learning Intern</p>    
+          <button type="button" onclick="alert('Grab drinks or food with Fiona!')">Do you like food?</button> 
+          <h4>I'd love to share more about my experiences.</h5>
+          <h5>Let's grab coffee or food!</h4>   
+        </div>
+      </div>
+        <script>
+            var textPos = 0;
+            var message = "Experiences: "
+            var input = document.getElementById("works");
+
+            typewriter2 = () => {
+                input.innerText = message.substring(0, textPos);
+                if (textPos++ != message.length) {
+                    setTimeout(typewriter2, 200);
+                }
+            }
+            window.addEventListener("scroll", function () {
+                newElem = document.getElementById("works-bg");
+                if (window.scrollY > 600) {
+                    typewriter2();
+                }
+            });
+        </script>
+    </div>
+
+<div class="footer-wrapper">
+  <div style="text-align: center">
+    <h2 class="footer-note">Let's stay in touch.</h2>
+    <p class="footer-para">Check out my socials and reach out! </p>
+  </div>
+  <div class="socials">
+      <a class="link linkedin" href="https://www.linkedin.com/in/fiona-wu-36806a220/">
+        <i style="font-size:24px" class="fa">&#xf0e1;</i>
+      </a>
+      <a class="link gmail" href="mailto:wu.fiona@berkeley.edu">
+        <i style="font-size:24px" class="fa">&#xf0e0;</i>
+      </a>
+    <a class="link github" href="https://github.com/f1ona-wu">
+      <i style="font-size:24px" class="fa">&#xf09b;</i>
+    </a>
+    </div>
+  <h6 style="font-family:'Roboto-Mono', monospace;">Made in Berkeley, CA</h6>
+</div>
+</body>
+</html>
